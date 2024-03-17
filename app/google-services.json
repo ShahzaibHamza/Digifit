@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "761427849335",
+    "project_id": "digifit-5642b",
+    "storage_bucket": "digifit-5642b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:761427849335:android:090fd32efc0294e4f45672",
+        "android_client_info": {
+          "package_name": "com.example.fitness_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlja8gumqUpvgF3mFKzne8BCDp5spUxPY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

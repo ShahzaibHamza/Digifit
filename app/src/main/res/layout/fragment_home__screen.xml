@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="end"
+    android:orientation="vertical"
+    tools:context=".mainscreens.Home_Screen">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/secondarycolor"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="12dp">
+
+        <ImageView
+            android:id="@+id/potrait"
+            android:layout_height="320dp"
+            android:layout_width="200dp"
+            android:layout_marginEnd="-45dp"
+            android:scaleX="1.5"
+            android:scaleY="1.2"
+            android:src="@drawable/malepotrait"
+            />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/progressbar"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/potrait"
+            >
+
+            <ProgressBar
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:indeterminateOnly="false"
+                android:progress="60"
+                android:progressDrawable="@drawable/circularprogressbar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="60%"
+                android:textColor="@color/secondarycolor"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:scrollbars="vertical"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="100dp">
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="10dp"
+            app:cardCornerRadius="10dp"
+            app:contentPadding="8dp"
+            android:backgroundTint="@color/secondarycolor">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Calories"
+               android:textAllCaps="true"
+               android:textStyle="bold"
+               android:textSize="16sp"
+               android:textColor="@color/primarycolor"
+               android:layout_marginBottom="15dp"
+               />
+
+           <ProgressBar
+               android:layout_width="90dp"
+               android:layout_height="100dp"
+               android:indeterminateOnly="false"
+               android:progress="40"
+               android:progressDrawable="@drawable/circularprogressbar2"
+               android:layout_marginBottom="10dp"
+               android:layout_gravity="center_horizontal"
+               />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="500 cal"
+               android:textColor="@color/primarycolor"
+               android:textSize="20sp"
+               android:textStyle="bold"
+               />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="last updated: 2 mins"
+               android:textSize="12sp"
+               android:textColor="@color/primarycolor"
+               android:layout_marginBottom="15dp"
+               />
+       </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="10dp"
+            app:cardCornerRadius="10dp"
+            app:contentPadding="8dp"
+            android:backgroundTint="#8C72CB">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weight:"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:textSize="16sp"
+                    android:textColor="@color/primarycolor"
+                    android:layout_marginBottom="15dp"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:src="@drawable/weighingmachine"
+                    android:layout_marginBottom="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="58 kg"
+                    android:textColor="@color/primarycolor"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="last updated: 1 month"
+                    android:textSize="12sp"
+                    android:textColor="@color/primarycolor"
+                    android:layout_marginBottom="15dp"
+                    />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="10dp"
+            app:cardCornerRadius="10dp"
+            app:contentPadding="8dp"
+            android:backgroundTint="#2389DA">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Water:"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:textSize="16sp"
+                    android:textColor="@color/primarycolor"
+                    android:layout_marginBottom="15dp"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:src="@drawable/drinkwater"
+                    android:layout_marginBottom="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="250 ml"
+                    android:textColor="@color/primarycolor"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="last updated: 24 mins"
+                    android:textSize="12sp"
+                    android:textColor="@color/primarycolor"
+                    android:layout_marginBottom="15dp"
+                    />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="10dp"
+            app:cardCornerRadius="10dp"
+            app:contentPadding="8dp"
+            android:backgroundTint="#3E4864">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Steps:"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:textSize="16sp"
+                    android:textColor="@color/primarycolor"
+                    android:layout_marginBottom="15dp"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:src="@drawable/runner"
+                    android:layout_marginBottom="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5,903"
+                    android:textColor="@color/primarycolor"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="last updated: 23 secs"
+                    android:textSize="12sp"
+                    android:textColor="@color/primarycolor"
+                    android:layout_marginBottom="15dp"
+                    />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

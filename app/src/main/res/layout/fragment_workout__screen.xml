@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    tools:context=".workoutcategoires.Workout_Screen">
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Full Body Workout"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textSize="22sp"
+                android:layout_marginStart="12dp"
+                android:textColor="@color/secondarycolor"
+                />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fullbody"
+                android:layout_width="380dp"
+                android:layout_height="180dp"
+                app:cardElevation="10dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="12dp"
+                android:layout_marginTop="12dp"
+                >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/fullbodyworkoutcard"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/fullbodypic"/>
+
+                    <TextView
+                        android:id="@+id/maintext"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:gravity="center"
+                        android:text="FULL BODY WORKOUT"
+                        android:textColor="@color/primarycolor"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Arms Workout"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textSize="22sp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/secondarycolor"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/armsbegineer"
+                android:layout_width="380dp"
+                android:layout_height="180dp"
+                app:cardElevation="10dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="12dp"
+                android:layout_marginTop="12dp"
+                >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/armsbworkoutcard"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/fullbodypic"/>
+
+                    <TextView
+                        android:id="@+id/maintext2"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="40dp"
+                        android:text="ARMS BEGINEER"
+                        android:textStyle="bold"
+                        android:textSize="28sp"
+                        android:textColor="@color/primarycolor"
+                        />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/armsintermidiate"
+                android:layout_width="380dp"
+                android:layout_height="180dp"
+                app:cardElevation="10dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="12dp"
+                android:layout_marginTop="12dp"
+                >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/armsiworkoutcard"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/fullbodypic"/>
+
+                    <TextView
+                        android:id="@+id/maintext3"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="40dp"
+                        android:text="ARMS INTERMIDIATE"
+                        android:textStyle="bold"
+                        android:textSize="28sp"
+                        android:textColor="@color/primarycolor"
+                        />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/armsexpert"
+                android:layout_width="380dp"
+                android:layout_height="180dp"
+                app:cardElevation="10dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="12dp"
+                android:layout_marginTop="12dp"
+                >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/armseworkoutcard"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/fullbodypic"/>
+
+                    <TextView
+                        android:id="@+id/maintext4"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="40dp"
+                        android:text="ARMS
+                        EXPERT"
+                        android:textStyle="bold"
+                        android:textSize="28sp"
+                        android:textColor="@color/primarycolor"
+                        />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
